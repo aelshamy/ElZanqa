@@ -5,9 +5,9 @@
             e.preventDefault();
             //$(this).removeClass('closed').addClass('opened');
             $(".main-header").toggleClass('expanded');
-            $('.header-toggle').toggleClass('opened');
             $('.dimmed').fadeToggle(function(){
             	$('.header-columns').toggle();
+            	$('.header-toggle').toggleClass('opened');
             });
         });
 
