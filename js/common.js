@@ -5,9 +5,9 @@
             e.preventDefault();
             //$(this).removeClass('closed').addClass('opened');
             $(".main-header").toggleClass('expanded');
-            $('.dimmed').fadeToggle(function(){
-            	$('.header-columns').toggle();
-            	$('.header-toggle').toggleClass('opened');
+            $('.dimmed').fadeToggle(function() {
+                $('.header-columns').toggle();
+                $('.header-toggle').toggleClass('opened');
             });
         });
 
@@ -26,6 +26,14 @@
                 $this.removeClass('followed');
             } else {
                 $this.addClass('followed');
+            }
+        });
+
+        //store setting -- store title erase button
+        $('.erase-input').on('click', function() {
+            var input = $(this).parents('.input-group:first').find('.form-control');
+            if (input.val().length > 0) {
+                input.val("");
             }
         });
 
