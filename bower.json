@@ -1,0 +1,19 @@
+{
+  "name": "elZanqa",
+  "version": "1.0.0",
+  "authors": [
+    "Amr Elshamy <amr-hussien@hotmail.com>"
+  ],
+  "description": "ElZanqa.com",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
