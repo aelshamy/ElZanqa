@@ -173,19 +173,27 @@ h6,
     line-height: 1;
     font-size: 13px;
 }
-.pagination > li > a.first-links{
-    border:none;
-    background:none;
+
+.pagination > li > a.first-links {
+    border: none;
+    background: none;
     border-radius: 0;
-    margin:0;
+    margin: 0;
 }
-.pagination > li > a > .glyphicon + .glyphicon{
+
+.pagination > li > a > .glyphicon + .glyphicon {
     margin-right: -12px;
 }
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
-    background:#fdb813;
-    border:1px solid #fdb813;
-    color:black;
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background: #fdb813;
+    border: 1px solid #fdb813;
+    color: black;
 }
 
 .radio label,
@@ -907,8 +915,9 @@ hr {
     height: 42px;
     display: inline-block;
     vertical-align: middle;
-    margin-top: -4px;
     position: relative;
+    text-align: center;
+    line-height: 1em;
 }
 
 .badges .count {
@@ -1120,7 +1129,7 @@ footer a {
 }
 
 .nav-tabs-profile {
-    margin: 25px 0;
+    margin: 25px -15px;
     border-bottom: 0;
 }
 
@@ -1300,6 +1309,16 @@ footer a {
     margin: 40px 0;
 }
 
+.store-header-bg .pie-wrapper {
+    font-size: 55px;
+}
+
+.store-header-bg .vault {
+    width: 55px;
+    height: 55px;
+    background: black;
+}
+
 .store-header-bg .badges .count {
     background-color: white;
     color: black;
@@ -1373,9 +1392,70 @@ footer a {
     text-decoration: none;
 }
 
-.filter-pane{
+.filter-pane {
     margin-bottom: 50px;
 }
-.filter-pane label{
-    margin-left:10px;
+
+.filter-pane label {
+    margin-left: 10px;
+}
+
+.btn-profile-upload {
+    width: 90px;
+    height: 90px;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: "GESSTwoLight-Light";
+    float: right;
+    margin: 3px 5px;
+    float: right;
+    border:1px solid #337ab7;
+}
+
+.btn-profile-upload i {
+    display: block;
+}
+
+.file-preview {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+}
+
+.file-preview-frame {
+    padding: 0;
+    box-shadow: none;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    margin:3px;
+}
+
+.file-preview-frame:not(.file-preview-error):hover {
+    box-shadow: none;
+}
+
+.file-preview-frame,
+.file-preview-image,
+.file-preview-other {
+    border: 1px solid #ddd;
+    height: 90px;
+    width: 90px;
+}
+.image-preview{
+    height: 360px;
+    width: 100%;
+    background:#dddddd;
+    display: none;
+}
+.preview-buttons{
+    margin-top:7px;
+    display: none;
+}
+.preview-buttons .btn-link{
+    padding:7px;
 }
