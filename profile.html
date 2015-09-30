@@ -338,43 +338,42 @@
         </div>
     </nav>
     <main class="container">
-    <div class="row user-profile">
-        <div class="col-lg-5">
-            <div class="row">
-                <div class="media">
-                    <div class="pull-right">
-                        <img src="images/store_logo.jpg" class="img-circle img-thumbnail" alt="">
+        <div class="row user-profile">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="media">
+                        <div class="pull-right">
+                            <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h6>مرحبا يا</h6>
+                            <h5>مصطفى عبد الله</h5> ليك 3 محلات فى الزنقة .. <a href="#">طور محلاتك لفئة أعلى</a>
+                        </div>
                     </div>
-                    <div class="media-body">
-                        <h6>مرحبا يا</h6>
-                        <h5>مصطفى عبد الله</h5>
-                        ليك 3 محلات فى الزنقة .. <a href="#">طور محلاتك لفئة أعلى</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-4 has-points">
+                        <h6>رصيدك في الزنقه</h6>
+                        <span class="points">6987 جنيه</span> <a href="#">زيارة للخزنه</a>
+                    </div>
+                    <div class="col-lg-4 has-points">
+                        <h6>نقط من اللعب</h6>
+                        <span class="points">588 نقطه</span> <a href="#">إكسب نقط </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="alert alert-danger" role="alert">
+                            <h6><i class="glyphicon glyphicon-alert"></i> نقاط سلبية</h6>
+                            <span>3 نقاط  سلبية </span>
+                            <a href="#" class="alert-link pull-left">حل المشكله</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-7">
-            <div class="row">
-                <div class="col-lg-4 has-points">
-                    <h6>رصيدك في الزنقه</h6>
-                    <span class="points">6987 جنيه</span> <a href="#">زيارة للخزنه</a>
-                </div>
-                <div class="col-lg-4 has-points">
-                    <h6>نقط من اللعب</h6>
-                    <span class="points">588 نقطه</span> <a href="#">إكسب نقط </a>
-                </div>
-                <div class="col-lg-5">
-                    <div class="alert alert-danger" role="alert">
-                        <h6><i class="glyphicon glyphicon-exclamation-sign"></i> نقاط سلبية</h6>
-                        <span>3 نقاط  سلبية </span>
-                                       <a href="#" class="alert-link pull-left">حل المشكله</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
         <div class="alert alert-warning" role="alert">
-        <i class="glyphicon glyphicon-exclamation-sign"></i> مثال علي تنويهات حديثة او حاجه حصلت محتاج الموقع انه يوريه لمصطفى في صفحته
+            <i class="glyphicon glyphicon-exclamation-sign"></i> مثال علي تنويهات حديثة او حاجه حصلت محتاج الموقع انه يوريه لمصطفى في صفحته
             <a href="#" class="alert-link">لينك لتفاصيل التنويه</a>
         </div>
         <hr>
@@ -404,12 +403,6 @@
                     <li role="presentation"><a href="#">طلبات الشراء </a>
                     </li>
                 </ul>
-                <div class="sidebar-adbox">
-                    <img src="images/sidead.png" class="img-responsive" alt="">
-                </div>
-                <div class="sidebar-adbox">
-                    <img src="images/sidead2.png" class="img-responsive" alt="">
-                </div>
             </aside>
             <div class="col-lg-9">
                 <div class="listing-header">
@@ -480,8 +473,8 @@
                     </div>
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-tabs-profile" role="tablist">
-                        <li role="presentation" class="active"><a href="#store-settings" aria-controls="store-settings" role="tab" data-toggle="tab">إعدادات المحل</a></li>
-                        <li role="presentation"><a href="#goods" aria-controls="goods" role="tab" data-toggle="tab">البضاعة</a></li>
+                        <li role="presentation"><a href="#store-settings" aria-controls="store-settings" role="tab" data-toggle="tab">إعدادات المحل</a></li>
+                        <li role="presentation" class="active"><a href="#goods" aria-controls="goods" role="tab" data-toggle="tab">البضاعة</a></li>
                         <li role="presentation"><a href="#add-product" aria-controls="add-product" role="tab" data-toggle="tab">إضافة منتجات </a></li>
                         <li role="presentation"><a href="#store-report" aria-controls="store-report" role="tab" data-toggle="tab">تقارير عن المحل</a></li>
                         <li role="presentation"><a href="#support" aria-controls="support" role="tab" data-toggle="tab">الدعم و المساعدة</a></li>
@@ -491,7 +484,7 @@
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane pane-with-shadow pane-with-form active" id="store-settings">
+                        <div role="tabpanel" class="tab-pane pane-with-shadow pane-with-form" id="store-settings">
                             <form action="#">
                                 <div class="store-profile-top">
                                     <div class="row">
@@ -716,7 +709,197 @@
                                 </div>
                             </form>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="goods">...</div>
+                        <div role="tabpanel" class="tab-pane active" id="goods">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-box">
+                                        <div class="media">
+                                            <div class="pull-right">
+                                                <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h6>تليفزيون سونى</h6>
+                                                <div class="points">4220 جنيه </div>
+                                                <a href="#" class="product-box-link"><span class="glyphicon glyphicon-pencil"></span> تعديل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="product-box-remove-link"><i class="glyphicon glyphicon-remove-sign"></i> حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="dotted">
+                            <div class="text-center">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" class="first-links" aria-label="Previous">
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="first-links" aria-label="Previous">
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" class="first-links" aria-label="Next">
+                                                <span class="glyphicon glyphicon-menu-left"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="first-links" aria-label="Next">
+                                                <span class="glyphicon glyphicon-menu-left"></span>
+                                                <span class="glyphicon glyphicon-menu-left"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                         <div role="tabpanel" class="tab-pane" id="add-product">...</div>
                         <div role="tabpanel" class="tab-pane" id="store-report">...</div>
                         <div role="tabpanel" class="tab-pane" id="support">...</div>
