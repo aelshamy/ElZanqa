@@ -48,8 +48,8 @@ h3,
     font-family: "GESSTwoBold-Bold";
 }
 
-h3,
-.h3 {
+h4,
+.h4 {
     color: #ff6600;
     font-size: 30px;
     font-family: "GESSTwoLight-Light";
@@ -95,9 +95,70 @@ h6,
 
 .form-control {
     border-radius: 0;
-    border: 1px solid #a3a3a3;
+    border: 1px solid #b5b5b5;
     -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, .5);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    border-radius: 0;
+    background: #f0f0f0;
+    font-size: 12px;
+    color: #333333;
+    font-family: Tahoma;
+    height: 28px;
+}
+
+.alert-warning {
+    color: black;
+    background-color: #fed54b;
+    border-color: #dddddd;
+}
+
+.alert-warning .alert-link {
+    color: #0079bf;
+    font-family: Tahoma;
+    font-weight: normal;
+}
+
+.alert-danger h6 {
+    color: inherit;
+    margin-top: 0;
+}
+
+.alert-danger {
+    color: #fed54b;
+    background-color: #d80000;
+    border-color: #d80000;
+}
+
+.alert-danger .alert-link {
+    color: inherit;
+    font-weight: normal;
+}
+
+.alert-danger span {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-pills > li {
+    float: right;
+}
+
+.nav-pills > li > a {
+    color: #0079bf;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    background: none;
+}
+
+.nave .glyphicon {
+    margin-left: 7px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .radio label,
@@ -118,6 +179,10 @@ hr {
     margin-right: -20px;
 }
 
+.nav-tabs > li {
+    float: right;
+}
+
 .main-btn {
     background: url('../images/btnbg.jpg') center center no-repeat;
     text-align: center;
@@ -131,7 +196,8 @@ hr {
     margin: 10px 0 0 15px;
 }
 
-.main-btn:hover, .main-btn:focus {
+.main-btn:hover,
+.main-btn:focus {
     background: #31c6e2;
     color: #fff;
     text-decoration: none;
@@ -166,6 +232,7 @@ hr {
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .follow-sign {
     width: 39px;
     height: 74px;
@@ -487,7 +554,7 @@ hr {
 }
 
 .mainnav ul > li a {
-    font-size: 18px;
+    font-size: 19px;
     font-family: "GESSTwoBold-Bold";
     color: #fff;
     text-align: right;
@@ -567,6 +634,7 @@ hr {
 .sidenav li a {
     color: #003348;
     font-size: 16px;
+    font-family: "GESSTwoLight-Light";
 }
 
 .sidenav li + li {
@@ -634,9 +702,14 @@ hr {
     display: inline-block;
 }
 
+.listing-header h3 {
+    margin-top: 10px;
+}
+
 .listing-header h3 span {
     font-size: 21px;
     color: #1abfdf;
+    margin-left: 15px;
 }
 
 .avatars {
@@ -778,14 +851,20 @@ hr {
     box-shadow: 0px 0px 2px #6B6B6B;
 }
 
-.product-card .store-details .code {
-    background: #fdb813;
+.code {
+    background: black;
     color: #fff;
-    width: 70%;
     margin: 0 auto;
-    padding: 1px;
+    padding: 2px 3px 2px 10px;
     border-radius: 20px;
     font-family: Tahoma;
+    display: inline-block;
+}
+
+.product-card .store-details .code {
+    width: 70%;
+    padding: 1px;
+    background: #fdb813;
 }
 
 .product-card .store-details .badges {
@@ -793,7 +872,7 @@ hr {
     padding-bottom: 15px;
 }
 
-.product-card .store-details .badges .vault {
+.badges .vault {
     background-color: #e2e2e2;
     padding: 10px;
     border-radius: 50%;
@@ -805,7 +884,7 @@ hr {
     position: relative;
 }
 
-.product-card .store-details .badges .count {
+.badges .count {
     background-color: #fdb813;
     color: black;
     position: absolute;
@@ -881,6 +960,11 @@ footer a {
     border-right: 3px solid #d4d4d4;
     padding-right: 20px;
     min-height: 460px;
+}
+
+.login-content .form-control {
+    background: #fff;
+    height: 34px;
 }
 
 .nav-login > li h2 {
@@ -963,4 +1047,275 @@ footer a {
 
 .store-step .pull-right .img {
     background: url('../images/step-store-disabled.png') no-repeat center center;
+}
+
+.pane-with-shadow {
+    background-color: #fff;
+    box-shadow: 0 0 3px #dddddd;
+    border: 1px solid #dddddd;
+}
+
+.form-inner-header {
+    font-family: "GESSTwoLight-Light";
+    font-size: 20px;
+    border-bottom: 1px solid #b5b5b5;
+    color: #ed1165;
+    margin: 20px 0;
+    padding-bottom: 15px;
+}
+
+.pane-with-form label {
+    font-size: 12px;
+    font-family: "GESSTwoBold-Bold";
+}
+
+.required {
+    color: red;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.label-light label {
+    font-family: "GESSTwoLight-Light";
+    font-size: 13px;
+}
+
+.glyphicon-remove-sign {
+    color: #d80000;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.nav-tabs-profile {
+    margin: 25px 0;
+    border-bottom: 0;
+}
+
+.nav-tabs > li > a {
+    font-size: 14px;
+    font-family: "GESSTwoLight-Light";
+    border: none;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background: none;
+    color: #d80000;
+}
+
+.nav-tabs-profile > li.active > a,
+.nav-tabs-profile > li.active > a:hover,
+.nav-tabs-profile > li.active > a:focus {
+    border: none;
+    border-bottom: 4px solid #d80000;
+    background: none;
+    color: #d80000;
+}
+
+.store-profile-top {
+    background: #ededed;
+    padding: 15px;
+}
+
+.store-profile-top .form-group {
+    margin-bottom: 0;
+}
+
+.store-name-input {
+    margin-bottom: 25px;
+}
+
+.store-name-input .form-control {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    font-size: 29px;
+    height: auto;
+    font-family: "GESSTwoBold-Bold";
+}
+
+.store-name-input .input-group-addon {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.store-name-input .input-group-addon button {
+    background: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-focus:focus,
+.no-focus:active {
+    box-shadow: none;
+    border-color: inherit;
+    outline: none;
+}
+
+.custom-checkbox {
+    padding-left: 10px;
+    margin-left: -15px;
+}
+
+.custom-checkbox input[type=radio] {
+    display: none;
+}
+
+.custom-checkbox input[type=radio] + label {
+    height: 104px;
+    width: 87px;
+    display: block;
+    position: relative;
+    transition: all 0.4s;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.custom-checkbox input[type=radio]:checked + label:after {
+    content: '\2714';
+    display: block;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    background: #339900;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2px;
+    text-indent: -7px;
+    border-radius: 5px;
+    font-family: "Arial"
+}
+
+.custom-file-input input[type="file"] {
+    display: none;
+}
+
+.custom-file-input label {
+    cursor: pointer;
+    height: 107px;
+    position: relative;
+}
+
+.custom-file-input label img {
+    max-height: 100%;
+}
+
+.custom-file-input label:after {
+    content: "\e046";
+    font-family: "Glyphicons Halflings";
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: black;
+    font-size: 30px;
+    line-height: 1;
+    display: none;
+}
+
+.custom-file-input label:hover:after {
+    display: block;
+}
+
+.store-header-bg {
+    background: url('../images/store_banner.jpg') no-repeat top right;
+    max-height: 170px;
+}
+
+.store-header-bg .media {
+    position: relative;
+    top: 25px;
+}
+
+.store-header-bg .media h3 {
+    margin-top: 10px;
+}
+
+.store-header-links {
+    background: #f8e9ee;
+    border-bottom: 1px solid #ed1165;
+    min-height: 40px;
+    padding-right: 170px;
+}
+
+.glyphicon-link {
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.store-header-bg .badges {
+    margin: 40px 0;
+}
+
+.store-header-bg .badges .count {
+    background-color: white;
+    color: black;
+}
+
+.user-profile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-profile h6 {
+    font-size: 18px;
+    font-family: "GESSTwoMedium-Medium";
+}
+
+.user-profile h5 {
+    font-size: 24px;
+    color: inherit;
+    font-family: inherit;
+}
+
+.user-profile img {
+    width: 110px;
+}
+
+.user-profile .alert {
+    padding: 7px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.user-profile a {
+    font-family: Tahoma;
+}
+
+.has-points {
+    margin-top: 35px;
+    margin-right: -30px;
+    border-right: 1px solid #b5b5b5;
+}
+
+.points {
+    color: #ed1165;
+    font-size: 18px;
+    margin-left: 5px;
 }
