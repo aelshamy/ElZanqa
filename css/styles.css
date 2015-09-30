@@ -1372,3 +1372,10 @@ footer a {
 .product-box-remove-link:hover {
     text-decoration: none;
 }
+
+.filter-pane{
+    margin-bottom: 50px;
+}
+.filter-pane label{
+    margin-left:10px;
+}
