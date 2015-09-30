@@ -19,4 +19,4 @@
 .DS_Store
 
 # Ignore npm-debug file
-npm-debug.log*
+npm-debug.log
