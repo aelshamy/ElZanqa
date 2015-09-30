@@ -1,16 +1,54 @@
 (function() {
     $(function() {
 
+        var mainHeader = $('.main-header'),
+            mainnav = $('.mainnav');
+
         $('.header-toggle, .list-notifications a').on('click', function(e) {
             e.preventDefault();
-            //$(this).removeClass('closed').addClass('opened');
-            $(".main-header").toggleClass('expanded');
+
+            mainHeader.toggleClass('expanded');
+            mainnav.toggleClass('minified');
+            $(window).trigger('scroll');
             $('.dimmed').fadeToggle(function() {
                 $('.header-columns').toggle();
                 $('.header-toggle').toggleClass('opened');
             });
         });
 
+        $(window).scroll(function() {
+
+            if (!mainHeader.hasClass('expanded')) {
+                var headerHeight = mainHeader.height(),
+                    scroll = getScroll();
+                if (headerHeight < scroll.top) {
+                    mainnav.addClass('minified');
+                } else {
+                    mainnav.removeClass('minified');
+                }
+            }
+        });
+
+        //card flip
+        $('.flip-card').on('click', function(e) {
+            e.preventDefault();
+            $('.dimmed').fadeToggle();
+            $(this).parents('.product-card:first').flip(true).css('zIndex', '9999');
+        });
+
+        $('.flip-card-close').on('click', function(e) {
+            e.preventDefault();
+            $('.dimmed').fadeToggle();
+            $(this).parents('.product-card:first').flip(false, function(){
+                $(this).css('zIndex', '');
+            });
+        });
+
+        if (jQuery().flip) {
+            $('.product-card').flip({
+                trigger: 'manual'
+            });
+        }
 
         $(".main-header .scrolled-content ul, .main-header .scrolled-content .media-list").mCustomScrollbar({
             setHeight: 210,
@@ -172,7 +210,16 @@
                 }
 
             }
-        })
+        });
 
     });
 })();
+
+function getScroll() {
+    var b = document.body;
+    var e = document.documentElement;
+    return {
+        left: parseFloat(window.pageXOffset || b.scrollLeft || e.scrollLeft),
+        top: parseFloat(window.pageYOffset || b.scrollTop || e.scrollTop)
+    };
+}
