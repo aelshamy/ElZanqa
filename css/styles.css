@@ -288,11 +288,11 @@ hr {
     font-size: 14px;
     font-family: "GESSTwoLight-Light";
     background: #fff url('../images/headerbg.png') no-repeat bottom center;
-    -webkit-transition: height .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-    -moz-transition: height .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-    -ms-transition: height .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-    -o-transition: height .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-    transition: height .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -webkit-transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -moz-transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -ms-transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -o-transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
 .main-header h6 {
@@ -301,6 +301,10 @@ hr {
 
 .main-header.expanded {
     height: 466px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .dimmed {
@@ -324,11 +328,6 @@ hr {
     left: 0;
     background: url('../images/zina.png') no-repeat top center;
     height: 16px;
-}
-
-.main-header .logo {
-    position: absolute;
-    bottom: -70px;
 }
 
 .topnav {
@@ -547,17 +546,6 @@ hr {
     left: 0;
 }
 
-.main-header .header-toggle {
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    right: 50%;
-    top: 100%;
-    margin-right: -15px;
-    margin-top: -15px;
-    background: url('../images/header-open.png') no-repeat center center;
-}
-
 .main-header .header-toggle.opened {
     background: url('../images/header-close.png') no-repeat center center;
 }
@@ -566,6 +554,57 @@ hr {
     background: #002d41;
     padding-top: 10px;
     border-bottom: 1px solid #3a5c6c;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+    -webkit-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -moz-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -ms-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -o-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.mainnav.minified {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.main-header.expanded + .mainnav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 465px;
+}
+
+.mainnav .logo {
+    position: absolute;
+    bottom: -12px;
+}
+
+.mainnav .logo img {
+    width: 100%;
+    -webkit-transition: width .2s ease;
+    -moz-transition: width .2s ease;
+    -ms-transition: width .2s ease;
+    -o-transition: width .2s ease;
+    transition: width .2s ease;
+}
+
+.mainnav.minified .logo img {
+    width: 83px;
+}
+
+.mainnav .header-toggle {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    margin-right: -15px;
+    margin-top: -15px;
+    background: url('../images/header-open.png') no-repeat center center;
 }
 
 .mainnav .timeline-nav {
@@ -799,12 +838,16 @@ hr {
 /* product card */
 
 .product-card {
-    background: url('../images/productbg.png') center center no-repeat;
-    background-size: contain;
     height: 343px;
-    padding: 10px 0;
     position: relative;
     margin-bottom: 10px;
+}
+
+.product-card .front,
+.product-card .back {
+    background: url('../images/productbg.png') center center no-repeat;
+    background-size: contain;
+    padding: 10px 0;
 }
 
 .product-card .follow-sign {
@@ -864,11 +907,7 @@ hr {
     font-size: 20px;
 }
 
-.product-card .store-details {
-    text-align: center;
-}
-
-.product-card .store-details .title a {
+.product-card .store-details .title {
     color: #002d41;
 }
 
@@ -902,6 +941,20 @@ hr {
     background: #fdb813;
 }
 
+.product-card .back {
+    padding: 25px
+}
+
+.product-card .back .store-details .code {
+    color: #006666;
+    background: none;
+    width: auto;
+}
+
+.product-card .back .store-img img {
+    margin: 0;
+}
+
 .product-card .store-details .badges {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -918,6 +971,28 @@ hr {
     position: relative;
     text-align: center;
     line-height: 1em;
+}
+
+.badges.big .pie-wrapper {
+    font-size: 55px;
+}
+
+.badges.big .vault {
+    width: 55px;
+    height: 55px;
+}
+
+.badges .vault img {
+    max-width: 100%;
+}
+
+.badges .vault.black {
+    background: black;
+}
+
+.badges .vault.black .count {
+    background-color: white;
+    color: black;
 }
 
 .badges .count {
@@ -998,9 +1073,8 @@ footer a {
     min-height: 460px;
 }
 
-.login-content .form-control {
+#login-pane .form-control {
     background: #fff;
-    height: 34px;
 }
 
 .nav-login > li h2 {
@@ -1309,16 +1383,6 @@ footer a {
     margin: 40px 0;
 }
 
-.store-header-bg .pie-wrapper {
-    font-size: 55px;
-}
-
-.store-header-bg .vault {
-    width: 55px;
-    height: 55px;
-    background: black;
-}
-
 .store-header-bg .badges .count {
     background-color: white;
     color: black;
@@ -1372,6 +1436,7 @@ footer a {
     border-top: 1px solid #ed1165;
     border-bottom: 1px solid #ed1165;
     box-shadow: 0 0 3px #adadad;
+    margin-bottom: 25px;
 }
 
 .product-box-link {
@@ -1384,7 +1449,7 @@ footer a {
     color: inherit;
     text-align: center;
     display: inline-block;
-    margin: 25px 0;
+    margin-bottom: 25px;
     font-size: 18px;
 }
 
@@ -1394,10 +1459,6 @@ footer a {
 
 .filter-pane {
     margin-bottom: 50px;
-}
-
-.filter-pane label {
-    margin-left: 10px;
 }
 
 .btn-profile-upload {
@@ -1410,7 +1471,7 @@ footer a {
     float: right;
     margin: 3px 5px;
     float: right;
-    border:1px solid #337ab7;
+    border: 1px solid #337ab7;
 }
 
 .btn-profile-upload i {
@@ -1432,7 +1493,7 @@ footer a {
     display: inline-block;
     vertical-align: middle;
     border: none;
-    margin:3px;
+    margin: 3px;
 }
 
 .file-preview-frame:not(.file-preview-error):hover {
@@ -1446,16 +1507,109 @@ footer a {
     height: 90px;
     width: 90px;
 }
-.image-preview{
+
+.image-preview {
     height: 360px;
     width: 100%;
-    background:#dddddd;
+    background: #dddddd;
     display: none;
 }
-.preview-buttons{
-    margin-top:7px;
+
+.preview-buttons {
+    margin-top: 7px;
     display: none;
 }
-.preview-buttons .btn-link{
-    padding:7px;
+
+.preview-buttons .btn-link {
+    padding: 7px;
+}
+
+.store-box {
+    background: #fff url('../images/zina.png') no-repeat -30px -3px;
+    padding: 20px 10px;
+    box-shadow: 0 0 3px #adadad;
+}
+
+.product-box .remove-store-link {
+    border-right: 1px solid #ddd;
+    padding-right: 40px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+.product-box .badges {
+    margin-top: 30px;
+}
+
+.product-box .profile-img {
+    width: 88px;
+}
+
+.invitaion-box {
+    border: 2px dashed #ff6600;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 30px 0;
+}
+
+.invitaion-box .media {
+    background: #e6f6ff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.invitaion-box .media h6 {
+    color: #169fff;
+    font-size: 16px;
+    margin-top: 0;
+    font-family: "GESSTwoBold-Bold";
+}
+
+.invitaion-box .media p {
+    font-size: 12px;
+    font-family: "GESSTwoLight-Light";
+}
+
+.create-store-btn {
+    width: 270px;
+    font-size: 18px;
+}
+
+.actions .actions-link {
+    width: 90px;
+    float: right;
+}
+
+.actions .actions-link .glyphicon, .flip-card-link .glyphicon {
+    margin-left: 5px;
+}
+
+.product-card .info-column {
+    min-height: 80px;
+    float: right;
+    padding: 0 15px;
+    margin-bottom: 17px;
+    border-right: 1px solid #b5b5b5;
+}
+.pie-with-info{
+    display: inline-block;
+    text-align: center;
+}
+.pie-with-info > span{
+    display:block;
+    margin-top: 7px;
+    font-family: "Tahoma";
+}
+.green-text{
+    color: #006666;
+}
+.has-info-columns{
+    margin-bottom: 30px;
+}
+.flip-card-link{
+    float:left;
+}
+.flip-card-link a{
+    color:red;
 }
