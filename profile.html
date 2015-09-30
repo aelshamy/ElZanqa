@@ -10,7 +10,11 @@
     <!-- Bootstrap -->
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="css/circle.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link href="lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet">
+    <link href="lib/cropper/dist/cropper.min.css" rel="stylesheet">
+
+    <link href="css/addiontal-icons.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -426,35 +430,39 @@
                                 <div class="badges">
                                     <div class="vault">
                                         <span class="count">12</span>
-                                        <span><img src="images/vault.png" alt=""></span>
+                                        <span><img src="images/vault-white.png" alt=""></span>
                                     </div>
-                                    <div class="c100 p25">
-                                        <span><img src="images/visits.png" alt=""></span>
-                                        <div class="slice">
-                                            <div class="bar"></div>
-                                            <div class="fill"></div>
+                                    <div class="pie-wrapper progress-30 black">
+                                        <span class="label"><img src="images/visits-white.png" alt=""></span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
                                         </div>
+                                        <div class="shadow"></div>
                                     </div>
-                                    <div class="c100 p25">
-                                        <span><img src="images/likes.png" alt=""></span>
-                                        <div class="slice">
-                                            <div class="bar"></div>
-                                            <div class="fill"></div>
+                                    <div class="pie-wrapper progress-45 black">
+                                        <span class="label"><img src="images/likes-white.png" alt=""></span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
                                         </div>
+                                        <div class="shadow"></div>
                                     </div>
-                                    <div class="c100 p25">
-                                        <span><img src="images/basket.png" alt=""></span>
-                                        <div class="slice">
-                                            <div class="bar"></div>
-                                            <div class="fill"></div>
+                                    <div class="pie-wrapper progress-60 black">
+                                        <span class="label"><img src="images/basket-white.png" alt=""></span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
                                         </div>
+                                        <div class="shadow"></div>
                                     </div>
-                                    <div class="c100 p25">
-                                        <span><img src="images/call.png" alt=""></span>
-                                        <div class="slice">
-                                            <div class="bar"></div>
-                                            <div class="fill"></div>
+                                    <div class="pie-wrapper progress-90 black">
+                                        <span class="label"><img src="images/call-white.png" alt=""></span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
                                         </div>
+                                        <div class="shadow"></div>
                                     </div>
                                 </div>
                             </div>
@@ -474,8 +482,8 @@
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-tabs-profile" role="tablist">
                         <li role="presentation"><a href="#store-settings" aria-controls="store-settings" role="tab" data-toggle="tab">إعدادات المحل</a></li>
-                        <li role="presentation" class="active"><a href="#goods" aria-controls="goods" role="tab" data-toggle="tab">البضاعة</a></li>
-                        <li role="presentation"><a href="#add-product" aria-controls="add-product" role="tab" data-toggle="tab">إضافة منتجات </a></li>
+                        <li role="presentation"><a href="#goods" aria-controls="goods" role="tab" data-toggle="tab">البضاعة</a></li>
+                        <li role="presentation" class="active"><a href="#add-product" aria-controls="add-product" role="tab" data-toggle="tab">إضافة منتجات </a></li>
                         <li role="presentation"><a href="#store-report" aria-controls="store-report" role="tab" data-toggle="tab">تقارير عن المحل</a></li>
                         <li role="presentation"><a href="#support" aria-controls="support" role="tab" data-toggle="tab">الدعم و المساعدة</a></li>
                         <li role="presentation" class="pull-left">
@@ -709,7 +717,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div role="tabpanel" class="tab-pane active" id="goods">
+                        <div role="tabpanel" class="tab-pane" id="goods">
                             <div class="pane-with-shadow padding filter-pane">
                                 <form class="form-inline row">
                                     <div class="col-lg-4">
@@ -918,7 +926,113 @@
                                 </nav>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="add-product">...</div>
+                        <div role="tabpanel" class="tab-pane pane-with-shadow pane-with-form active" id="add-product">
+                            <form action="#">
+                                <div class="form-horizontal padding">
+                                    <h5 class="form-inner-header">صور المنتج</h5>
+                                    <div class="clearfix">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                            
+                                                <input id="input-20" type="file" multiple="true" class="file-loading" data-browse-class="btn btn-primary btn-profile-upload" data-browse-label="إضافة صورة" data-browse-icon="<i class='glyphicon glyphicon-plus'></i>">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="image-preview">
+                                                <img src="images/Profile_03.jpg" alt="">
+                                            </div>
+                                            <div class="preview-buttons">
+                                                <button type="button" class="btn btn-link" data-method="setDragMode" data-option="move" title="Move">
+                                                    <span class="glyphicon glyphicon-move"></span>
+                                                تحريك
+                                                </button>
+                                                <button type="button" class="btn btn-link" data-method="rotate" data-option="-45" title="Rotate Left">
+                                                    <span class="glyphicon glyphicon-repeat"></span>
+                                                    دوران
+                                                </button>
+                                                <button type="button" class="btn btn-link" data-method="setDragMode" data-option="crop" title="Crop">
+                                                    <span class="glyphicon glyphicon-scissors"></span>
+                                                    قص
+                                                </button>
+                                                <button type="button" class="btn btn-link" data-method="rotate" data-option="-45" title="Rotate Left">
+                                                    <span class="glyphicon glyphicon-camera"></span>
+                                                    إجعلها صورة الغلاف
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="form-inner-header">بيانات المنتج</h5>
+                                    <div class="form-group">
+                                        <label for="store-manager-input" class="col-sm-3 control-label"><span class="required">*</span>نوع البضاعة</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="store-description-input" class="col-sm-3 control-label"><span class="required">*</span>التصنيف الفرعى</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="store-timing" class="col-sm-3 control-label">إسم المنتج</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="store-manager-input" placeholder="التصنيف الفرعى">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone-input" class="col-sm-3 control-label">وصف المنتج</label>
+                                        <div class="col-sm-6">
+                                            <textarea class="form-control" id="store-description-input" placeholder="وصف المنتج" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <h5 class="form-inner-header">مواصفات المنتج</h5>
+                                    <div class="form-group">
+                                        <label for="mobile-input" class="col-sm-3 control-label">المقاس</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website-input" class="col-sm-3 control-label">اللون</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website-input" class="col-sm-3 control-label">الموسم</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website-input" class="col-sm-3 control-label">الخامة</label>
+                                        <div class="col-lg-4">
+                                            <select class="form-control">
+                                                <option value="-1">من</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="clearfix">
+                                        <span><span class="required">*</span> حقول اجبارية</span>
+                                        <div class="pull-left">
+                                            <button type="submit" class="main-btn">إضافة منتج</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                         <div role="tabpanel" class="tab-pane" id="store-report">...</div>
                         <div role="tabpanel" class="tab-pane" id="support">...</div>
                     </div>
@@ -982,7 +1096,9 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="lib/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="lib/cropper/dist/cropper.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 
