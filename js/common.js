@@ -10,7 +10,6 @@
                 if (viewport.is('>md')) {
                     makeHeaderFixed();
                 }
-            console.log('Current breakpoint:', viewport.current());
             })
         });
 
