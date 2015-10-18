@@ -1692,7 +1692,8 @@
     }
     
     .invitaion-box {
-        border: 2px dashed #ff6600;
+        /*border: 2px dashed #ff6600;*/
+        border: 2px dashed #80df11;
         border-radius: 10px;
         padding: 7px;
         margin: 30px 0;
