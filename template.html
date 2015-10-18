@@ -22,13 +22,11 @@
 </head>
 
 <body>
-    
     <header class="main-header">
         <div class="zina"></div>
         <div class="container">
-            
             <div class="row">
-                <nav class="topnav">
+                <nav class="topnav hidden-xs hidden-sm">
                     <ul class="list-unstyled list-inline">
                         <li><a href="#">إحنا مين</a></li>
                         <li><a href="#">إتصل بنا</a></li>
@@ -49,7 +47,7 @@
                 </div>
                 <div class="col-lg-10">
                     <div class="row">
-                        <div class="col-lg-3 scrolled-content ">
+                        <div class="col-lg-3 scrolled-content">
                             <span class="glyphicon glyphicon-comment list-img"></span>
                             <h6>الدردشه</h6>
                             <div class="media-list chat-list">
@@ -247,85 +245,77 @@
             </div>
             <!-- /header-columns -->
             <div class="row header-search">
-                <div class="col-lg-9 col-lg-pull-3">
-                  <div class="row">
-                    <div class="col-lg-8">
-                        <form action="#">
-                            <div class="search-form">
-                                <input type="text" placeholder="دول علي منتجات أو محلات من هنا" />
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        في كل التصنيفات
-                                        <span class="glyphicon glyphicon-triangle-bottom indicator"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                        <li><a href="#">التصنيف الاول</a></li>
-                                        <li><a href="#">التصنيف الثاني</a></li>
-                                        <li><a href="#">التصنيف الثالث</a></li>
-                                        <li><a href="#">التصنيف الرابع</a></li>
-                                    </ul>
+                <div class="col-lg-9 col-md-pull-3">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-5 col-sm-7 col-sm-pull-3 col-md-pull-0">
+                            <form action="#">
+                                <div class="search-form hidden-xs">
+                                    <input class="" type="text" placeholder="دول علي منتجات أو محلات من هنا" />
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            في كل التصنيفات
+                                            <span class="glyphicon glyphicon-triangle-bottom indicator"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><a href="#">التصنيف الاول</a></li>
+                                            <li><a href="#">التصنيف الثاني</a></li>
+                                            <li><a href="#">التصنيف الثالث</a></li>
+                                            <li><a href="#">التصنيف الرابع</a></li>
+                                        </ul>
+                                    </div>
+                                    <button class="submit"><span class="glyphicon glyphicon-search"></span></button>
                                 </div>
-                                <button class="submit"><span class="glyphicon glyphicon-search"></span></button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-2 col-sm-pull-3 col-md-pull-0">
+                            <ul class="list-inline list-unstyled list-notifications">
+                                <li class="visible-xs-inline-block"><span class=" glyphicon glyphicon-search"></span></li>
+                                <li class="user">
+                                    <a href="#">
+                                        <img src="images/avatar.jpg" class="list-img" alt="">
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-comment"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <ul class="list-inline list-unstyled list-notifications">
-                            <li class="user">
-                                <a href="#">
-                                    <img src="images/avatar.jpg" class="list-img" alt="">
-                                    <span class="glyphicon glyphicon-menu-down"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-comment"></span>
-                                    <span class="badge">42</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-bell"></span>
-                                    <span class="badge">42</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span class="badge">42</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-shopping-cart"></span>
-                                    <span class="badge">42</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
-        
     </header>
     <nav class="mainnav">
-    <a href="#" class="header-toggle"></a>
+        <a href="#" class="header-toggle visible-lg"></a>
         <div class="container">
-        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
             <div class="row">
                 <div class="col-lg-10 col-lg-pull-2">
                     <ul class="list-inline">
                         <li><a href="#" class="timeline-nav">التايم لاين <span class="sorting">(بالتصنيف  / بالوقت)</span></a></li>
-                        <!-- <li>
-                        <a href="#">كل التصنيفات <span class="glyphicon glyphicon-triangle-bottom indicator"></span></a>
-                        <ul>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                        </ul>
-                    </li> -->
-                        <li>
+                        <li class="hidden-xs hidden-sm">
                             <div class="dropdown">
                                 <a href="#" class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     كل التصنيفات
@@ -339,27 +329,28 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">عندك دى؟</a></li>
-                        <li><a href="#">سوق الجملة</a></li>
-                        <li><a href="#">سوق الجمعة</a></li>
-                        <li><a href="#" class="blog">بلوج الزنقة</a></li>
-                        <li><a href="#" class="rss">تابع</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">عندك دى؟</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">سوق الجملة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">سوق الجمعة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#" class="blog">بلوج الزنقة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#" class="rss">تابع</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <main class="container">
-        
-        <div class="row">
-            
-        </div>
+    <main class="container container-mob">
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4 col-xs-6">
                         <h6>أهلا في الزنقة</h6>
                         <ul>
                             <li><a href="#">إحنا مين؟</a></li>
@@ -368,7 +359,7 @@
                             <li><a href="#">إتصل بينا</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4 col-xs-6">
                         <h6>معلومات</h6>
                         <ul>
                             <li><a href="#">أهم  محلات الزنقة</a></li>
@@ -377,7 +368,7 @@
                             <li><a href="#">مميزات الزنقه</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4 col-xs-6">
                         <h6>&nbsp;</h6>
                         <ul>
                             <li><a href="#">إشترك في  النشرة البريدية </a></li>
@@ -388,9 +379,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-sm-3">
                         <h6>تـابعـونــا</h6>
                         <div>
                             <a href="#"><img src="images/twitter.png" alt=""></a>
@@ -398,7 +389,7 @@
                             <a href="#"><img src="images/youtube.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-lg-9 footerlogo">
+                    <div class="col-sm-9 footerlogo">
                         <img src="images/footerlogo.png" alt="">
                         <p>جميع الحقوق محفوظة 2015 م الزنقة . كوم</p>
                     </div>
@@ -411,6 +402,7 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/flip/dist/jquery.flip.min.js"></script>
     <script src="lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="lib/responsive-bootstrap-toolkit/js/bootstrap-toolkit.min.js"></script>
     <script src="js/common.js"></script>
