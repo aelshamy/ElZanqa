@@ -78,6 +78,42 @@
         font-family: "GESSTwoLight-Light";
     }
     
+    .table {
+        font-family: Tahoma;
+    }
+    
+    .table-bordered,
+    .table-bordered > thead > tr > th,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+        border: 2px solid white;
+    }
+    
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        background-color: #ebebeb;
+    }
+    
+    .table-striped > tbody > tr:nth-of-type(even) {
+        background-color: #f4f4f4;
+    }
+    
+    th {
+        text-align: right;
+        font-family: Tahoma;
+        font-size: 13px;
+        color: #333333;
+    }
+    
+    .table-header th {
+        font-family: "GESSTwoMedium-Medium";
+        color: white;
+        font-size: 14px;
+        background: #1abfdf;
+    }
+    
     .arial {
         font-family: Arial;
     }
@@ -151,11 +187,11 @@
     }
     
     blockquote {
-        font-family: Arial;
+        font-family: Tahoma;
         padding: 0;
         padding: 0 20px;
         border: none;
-        font-size: 15px;
+        font-size: 14px;
     }
     
     blockquote:before {
@@ -979,7 +1015,7 @@
         margin-left: 10px;
     }
     
-    .product-card .details {
+    p.details {
         font-family: Tahoma;
     }
     
@@ -1812,6 +1848,9 @@
     .filter-colors .red {
         background: #cc0000;
     }
+    .red{
+        color:#cc0000;
+    }
     
     .filter-colors .pink {
         background: #ff98bf;
@@ -1869,18 +1908,22 @@
     
     .shop-card {
         border-top: 1px solid #ed1165;
+        border-bottom: 1px solid #ed1165;
         -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, .5);
         box-shadow: 0 0 1px rgba(0, 0, 0, .5);
         padding: 20px;
         margin-bottom: 30px;
+        background: white;
     }
     
     .orange .shop-card {
         border-top: 1px solid #fdb813;
+        border-bottom: 1px solid #fdb813;
     }
     
     .blue .shop-card {
         border-top: 1px solid #1abfdf;
+        border-bottom: 1px solid #1abfdf;
     }
     
     .shop-card .main-btn {
@@ -1997,6 +2040,140 @@
     .caption .price span {
         font-size: 25px;
     }
+    /* notifications */
+    
+    .notification-item {
+        border-bottom: 1px dashed #fdb813;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        margin-right: 4px;
+    }
+    
+    .notification-item:last-child {
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .notification-item .pull-right > .glyphicon {
+        font-size: 40px;
+        margin-right: 4px;
+    }
+    
+    .notification-item .glyphicon-exclamation-sign {
+        color: #002d40;
+    }
+    
+    .notification-item .glyphicon-ok-sign {
+        color: #1abfdf;
+    }
+    
+    .notification-item .glyphicon-alert {
+        color: #d80000;
+    }
+    /* search */
+    
+    .listing-header h3 .search-term {
+        color: #ed1165;
+        font-size: inherit;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .search-result-count {
+        padding: 15px 0 15px 15px;
+        float: right;
+        font-size: 18px;
+    }
+    
+    .pink {
+        color: #ed1165;
+    }
+    
+    .shop-card .profile-img {
+        width: 50px;
+    }
+    
+    .shop-card .pie-wrapper {
+        font-size: 35px;
+    }
+    
+    .shop-card .pie-wrapper img,
+    .shop-card .badges .vault img {
+        max-width: 110%;
+    }
+    
+    .shop-card .badges {
+        margin-top: 20px;
+    }
+    
+    .shop-card .badges .vault {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .shop-card .badges .count {
+        font-size: 11px;
+        line-height: 1;
+    }
+
+    .terms-links {
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    .terms-links a:after {
+        content: '|';
+        padding-right: 10px;
+    }
+    
+    .terms-links a {
+        font-size: 13px;
+        font-family: Tahoma;
+    }
+    
+    .terms-links li:last-child a:after {
+        content: '';
+        padding: 0;
+    }
+    /* product-details */
+    .pane-product-details h5 {
+        color: black;
+        margin: 15px 0;
+        line-height: 1.5em;
+    }
+    
+    .rating-xs {
+        font-size: 1.5em;
+    }
+    .rating-disabled{
+        cursor: default;
+    }
+    .has-rating{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .rate-person{
+        color: #42748e;
+        margin-right: 10px;
+    }
+    .rate-item blockquote{
+        margin-top: 10px;
+    }
+    .product-meta{
+        font-family: Tahoma;
+        color: #337ab7;
+    }
+    .product-meta .star-rating-rtl{
+        margin: 20px 0 10px;
+    }
+    .product-meta .glyphicon{
+        font-size: 18px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
     
     @media (max-width: 767px) {
         .container-mob {
@@ -2101,6 +2278,10 @@
             padding-left: 0;
             float: none !important;
         }
+        .shop-card .media.media-title .pull-right {
+            padding-left: 20px;
+            float: right !important;
+        }
         .badges {
             text-align: center
         }
@@ -2133,6 +2314,8 @@
             border-top: 0;
         }
     }
+    
+
     /* sm */
     
     @media (min-width: 768px) and (max-width: 983px) {
