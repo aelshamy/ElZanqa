@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to Elzenqa.com</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet">
+    <link href="lib/cropper/dist/cropper.min.css" rel="stylesheet">
+    <link href="css/addiontal-icons.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="zina"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="topnav hidden-xs hidden-sm">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">إحنا مين</a></li>
+                        <li><a href="#">إتصل بنا</a></li>
+                        <li><a href="#">مساعدة</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row header-columns">
+                <div class="col-lg-2">
+                    <img src="images/avatar.jpg" class="list-img" alt="">
+                    <h6 class="username">أهلا يا مصطفى</h6>
+                    <ul class="list-unstyled user-list">
+                        <li><a href="#">محلاتي</a></li>
+                        <li><a href="#">التقييمات</a></li>
+                        <li><a href="#">خزنة الالقاب</a></li>
+                        <li><a href="#">الخروج</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-3 scrolled-content">
+                            <span class="glyphicon glyphicon-comment list-img"></span>
+                            <h6>الدردشه</h6>
+                            <div class="media-list chat-list">
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">عالم الاطفال</h6>
+                                        <p>أه طبعا ممكن نوصللك في الشرقية</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">المحجبه</h6>
+                                        <p>لا مش موجود مقاسات خاصة..</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">ست البيت</h6>
+                                        <p>كل الحلل استانليس و شوف اللينك</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">ست البيت</h6>
+                                        <p>كل الحلل استانليس و شوف اللينك</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 scrolled-content">
+                            <span class="glyphicon glyphicon-bell list-img"></span>
+                            <h6>تنبيهات</h6>
+                            <ul class="list-unstyled alerts-list">
+                                <li>تم خصم 30 جنيه من رصيدك لشحن العملية رقم 3345 من محل “ حوامل وبس ”</li>
+                                <li>لبضاعة اللي كنت مستنيها من محل “ ست البيت ” بقت موجوده في الزنقه إتفرج عليها</li>
+                                <li>تم خصم 30 جنيه من رصيدك لشحن العملية رقم 3345 من محل “ حوامل وبس ”</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 scrolled-content">
+                            <span class="glyphicon glyphicon-heart list-img fav-store"></span>
+                            <h6>محلات متابعها</h6>
+                            <div class="media-list">
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body actions-list">
+                                        <h6 class="media-heading">عالم الاطفال</h6>
+                                        <p>
+                                            <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-earphone"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body actions-list">
+                                        <h6 class="media-heading">ملابس تركى و هندى </h6>
+                                        <p>
+                                            <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-earphone"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body actions-list">
+                                        <h6 class="media-heading">دنيا الملابس  و الاكسسوار</h6>
+                                        <p>
+                                            <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-earphone"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body actions-list">
+                                        <h6 class="media-heading">دنيا الملابس  و الاكسسوار</h6>
+                                        <p>
+                                            <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-earphone"></span></a>
+                                            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 scrolled-content">
+                            <span class="glyphicon glyphicon-shopping-cart list-img"></span>
+                            <h6>المشتريات</h6>
+                            <div class="media-list">
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">بيجاما قطن تركى  لارج </h6>
+                                        <p>
+                                            <span class="price">128 جنيه </span>
+                                            <span class="badge inshiping">جارى الشحن</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">موبايل بخطين نوكيا</h6>
+                                        <p>
+                                            <span class="price">1425 جنيه </span>
+                                            <span class="badge pendinginfo">أكد بياناتك</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">بيجاما قطن </h6>
+                                        <p>
+                                            <span class="price">354 جنيه</span>
+                                            <span class="badge notshipped">لم يتم الشحن</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-right">
+                                        <a href="#">
+                                            <img class="media-object" src="images/avatar.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">بيجاما قطن </h6>
+                                        <p>
+                                            <span class="price">354 جنيه</span>
+                                            <span class="badge notshipped">لم يتم الشحن</span>
+                                        </p>
+                                    </div>
+                                    <!-- /media-body -->
+                                </div>
+                                <!-- /media -->
+                            </div>
+                            <!-- /media-list -->
+                        </div>
+                        <!-- /scrolled-content -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- col-lg-10 -->
+            </div>
+            <!-- /header-columns -->
+            <div class="row header-search">
+                <div class="col-lg-9 col-md-pull-3">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-5 col-sm-7 col-sm-pull-3 col-md-pull-0">
+                            <form action="#">
+                                <div class="search-form hidden-xs">
+                                    <input class="" type="text" placeholder="دول علي منتجات أو محلات من هنا" />
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            في كل التصنيفات
+                                            <span class="glyphicon glyphicon-triangle-bottom indicator"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><a href="#">التصنيف الاول</a></li>
+                                            <li><a href="#">التصنيف الثاني</a></li>
+                                            <li><a href="#">التصنيف الثالث</a></li>
+                                            <li><a href="#">التصنيف الرابع</a></li>
+                                        </ul>
+                                    </div>
+                                    <button class="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-2 col-sm-pull-3 col-md-pull-0">
+                            <ul class="list-inline list-unstyled list-notifications">
+                                <li class="visible-xs-inline-block"><span class=" glyphicon glyphicon-search"></span></li>
+                                <li class="user">
+                                    <a href="#">
+                                        <img src="images/avatar.jpg" class="list-img" alt="">
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-comment"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                        <span class="badge">42</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="mainnav">
+        <a href="#" class="header-toggle visible-lg"></a>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="row">
+                <div class="col-lg-10 col-lg-pull-2">
+                    <ul class="list-inline">
+                        <li><a href="#" class="timeline-nav">التايم لاين <span class="sorting">(بالتصنيف  / بالوقت)</span></a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    كل التصنيفات
+                                    <span class="glyphicon glyphicon-triangle-bottom indicator"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">التصنيف الاول</a></li>
+                                    <li><a href="#">التصنيف الثاني</a></li>
+                                    <li><a href="#">التصنيف الثالث</a></li>
+                                    <li><a href="#">التصنيف الرابع</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">عندك دى؟</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">سوق الجملة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#">سوق الجمعة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#" class="blog">بلوج الزنقة</a></li>
+                        <li class="hidden-xs hidden-sm">
+                            <a href="#" class="rss">تابع</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container container-mob">
+        <div class="row user-profile">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="media">
+                        <div class="pull-right">
+                            <img src="images/store_logo.jpg" class="img-circle img-thumbnail profile-img" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h6>مرحبا يا</h6>
+                            <h5>مصطفى عبد الله</h5> ليك 3 محلات فى الزنقة .. <a href="#">طور محلاتك لفئة أعلى</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-4 has-points">
+                        <h6>رصيدك في الزنقه</h6>
+                        <span class="points">6987 جنيه</span> <a href="#">زيارة للخزنه</a>
+                    </div>
+                    <div class="col-lg-4 has-points">
+                        <h6>نقط من اللعب</h6>
+                        <span class="points">588 نقطه</span> <a href="#">إكسب نقط </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="alert alert-danger" role="alert">
+                            <h6><i class="glyphicon glyphicon-alert"></i> نقاط سلبية</h6>
+                            <span>3 نقاط  سلبية </span>
+                            <a href="#" class="alert-link pull-left">حل المشكله</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <i class="glyphicon glyphicon-exclamation-sign"></i> مثال علي تنويهات حديثة او حاجه حصلت محتاج الموقع انه يوريه لمصطفى في صفحته
+            <a href="#" class="alert-link">لينك لتفاصيل التنويه</a>
+        </div>
+        <hr>
+        <div class="row">
+            <aside class="col-lg-3">
+                <h4>إدارة حسابك</h4>
+                <ul class="nav nav-stacked sidenav">
+                    <li role="presentation" class="active"><a href="#">بياناتك الاساسية</a>
+                    </li>
+                    <li role="presentation"><a href="#">محلات متابعها</a>
+                    </li>
+                    <li role="presentation"><a href="#">أمنيات الشراء</a>
+                    </li>
+                    <li role="presentation"><a href="#">التقييمات </a>
+                    </li>
+                    <li role="presentation"><a href="#">التنبيهات</a>
+                    </li>
+                    <li role="presentation"><a href="#">سجل الدردشه</a>
+                    </li>
+                    <li role="presentation"><a href="#">مشترياتك</a>
+                    </li>
+                </ul>
+                <h4>إدارة محلاتك</h4>
+                <ul class="nav nav-stacked sidenav">
+                    <li role="presentation"><a href="#">كل المحلات</a>
+                    </li>
+                    <li role="presentation"><a href="#">طلبات الشراء </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="col-lg-9">
+                <div class="listing-header">
+                    <h3><span class="glyphicon glyphicon-triangle-left"></span>بياناتك الأساسية</h3>
+                </div>
+                <div class="pane-with-shadow pane-with-form">
+                    <div class="pane form-horizontal padding">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">الإسم</label>
+                            <div class="col-sm-6 label-light">
+                                <input type="text" class="form-control" id="phone-input" placeholder="الإسم">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-input" class="col-sm-2 control-label">البلد</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option value="-1">مصر</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website-input" class="col-sm-2 control-label">المحافظة</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option value="-1">القاهرة</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website-input" class="col-sm-2 control-label">المنطقة</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option value="-1">القاهرة</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">العنوان</label>
+                            <div class="col-sm-6 label-light">
+                                <input type="text" class="form-control" id="phone-input" placeholder="العنوان">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-input" class="col-sm-2 control-label">رقم التليفون</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="phone-input" placeholder="رقم التليفون">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-input" class="col-sm-2 control-label">رقم الموبايل</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="phone-input" placeholder="رقم الموبايل">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-input" class="col-sm-2 control-label">صورة البطاقة - للتجار فقط</label>
+                            <div class="col-sm-4">
+                                <input type="file" class="form-control" id="phone-input">
+                            </div>
+                        </div>
+                        <h5 class="form-inner-header">إهتماماتك في الزنقه</h5>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">أنواع البضاعة</label>
+                            <div class="col-sm-9 label-light">
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> تكنولوجيا
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أزياء وإكسسوار
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أجهزة كهربائية
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أجهزة كهربائية
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> ساعات و هدايا
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> لعب أطفال
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> مستلزمات البيت
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أدوات و عدد
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> تكنولوجيا
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أزياء وإكسسوار
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أجهزة كهربائية
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> أجهزة كهربائية
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">عرض بياناتك</label>
+                            <div class="col-sm-9 label-light">
+                                <div class="col-sm-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" id="inlineradio1" value="option1" name="display-input" checked=""> الاسم فقفط
+                                    </label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" id="inlineradio2" value="option2" name="display-input"> بيانات كاملة
+                                    </label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" id="inlineradio2" value="option2" name="display-input"> إخفاء بياناتى
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="clearfix">
+                            <span><span class="required">*</span> حقول اجبارية</span>
+                            <div class="pull-left">
+                                <button type="submit" class="main-btn">حفظ</button>
+                                <button class="main-btn">إلغاء</button>
+                            </div>
+                            <ul class="list-inline terms-links">
+                                <li><a href="#">شروط الاستخدام</a></li>
+                                <li><a href="#">سياسات الموقع</a></li>
+                                <li><a href="#">حقوق الملكية</a></li> 
+                                <li><a href="#">إخلاء المسؤلية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6>أهلا في الزنقة</h6>
+                        <ul>
+                            <li><a href="#">إحنا مين؟</a></li>
+                            <li><a href="#">إزاى تستخدم الموقع</a></li>
+                            <li><a href="#">إبدأ محلك دلوقتي </a></li>
+                            <li><a href="#">إتصل بينا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>معلومات</h6>
+                        <ul>
+                            <li><a href="#">أهم  محلات الزنقة</a></li>
+                            <li><a href="#">محلات مميزه</a></li>
+                            <li><a href="#">سوق الجمعة</a></li>
+                            <li><a href="#">مميزات الزنقه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>&nbsp;</h6>
+                        <ul>
+                            <li><a href="#">إشترك في  النشرة البريدية </a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">خريطة الموقع</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h6>تـابعـونــا</h6>
+                        <div>
+                            <a href="#"><img src="images/twitter.png" alt=""></a>
+                            <a href="#"><img src="images/facebook.png" alt=""></a>
+                            <a href="#"><img src="images/youtube.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 footerlogo">
+                        <img src="images/footerlogo.png" alt="">
+                        <p>جميع الحقوق محفوظة 2015 م الزنقة . كوم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="dimmed"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="lib/responsive-bootstrap-toolkit/js/bootstrap-toolkit.min.js"></script>
+    <script src="lib/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="lib/cropper/dist/cropper.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

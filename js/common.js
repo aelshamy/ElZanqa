@@ -86,6 +86,14 @@
             });
 
         }
+        // star rating
+        if (jQuery().rating) {
+            $(".rate-stars").rating({
+                rtl: true,
+                showClear: false,
+                showCaption: false
+            });
+        }
 
 
         var $image = $('.image-preview > img');
