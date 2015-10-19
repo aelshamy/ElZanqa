@@ -20,8 +20,11 @@
     "bootstrap": "~3.3.5",
     "bootstrap-fileinput": "~4.2.7",
     "cropper": "~0.11.1",
-    "html5shiv": "~3.7.3",
     "jquery": "~2.1.4",
-    "malihu-custom-scrollbar-plugin": "~3.0.9"
+    "malihu-custom-scrollbar-plugin": "~3.0.9",
+    "bootstrap-star-rating": "~3.5.4",
+    "flip": "~1.0.17",
+    "responsive-bootstrap-toolkit": "~2.5.0",
+    "bootstrap-rtl": "~3.3.4"
   }
 }
