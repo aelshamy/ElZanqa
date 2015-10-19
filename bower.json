@@ -26,5 +26,8 @@
     "flip": "~1.0.17",
     "responsive-bootstrap-toolkit": "~2.5.0",
     "bootstrap-rtl": "~3.3.4"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.5"
   }
 }

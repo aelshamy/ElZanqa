@@ -7,8 +7,8 @@
     .blue #1abfdf;
 
     */
-    
     /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+    
     @font-face {
         font-family: 'GESSTwoMedium-Medium';
         src: url('../fonts/GESSTwoMedium-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GESSTwoMedium-Medium.otf') format('opentype'), url('../fonts/GESSTwoMedium-Medium.woff') format('woff'), url('../fonts/GESSTwoMedium-Medium.ttf') format('truetype'), url('../fonts/GESSTwoMedium-Medium.svg#GESSTwoMedium-Medium') format('svg');
@@ -132,7 +132,6 @@
         padding-bottom: 0;
     }
     
-    
     .form-control {
         border-radius: 0;
         border: 1px solid #b5b5b5;
@@ -144,6 +143,16 @@
         color: #333333;
         font-family: Tahoma;
         height: 28px;
+    }
+    
+    .input-group .form-control:first-child,
+    .input-group-addon:first-child,
+    .input-group-btn:first-child>.btn,
+    .input-group-btn:first-child>.btn-group>.btn,
+    .input-group-btn:first-child>.dropdown-toggle,
+    .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+        border-radius: 0;
     }
     
     .input-group-btn:last-child > .btn,
@@ -263,10 +272,6 @@
         font-size: 18px;
     }
     
-    .nav-pills > li {
-        float: right;
-    }
-    
     .nav-pills > li > a {
         color: #0079bf;
     }
@@ -279,15 +284,13 @@
         background: none;
     }
     
-    .nave .glyphicon {
+    .nav .glyphicon {
         margin-left: 7px;
-        display: inline-block;
         vertical-align: middle;
     }
     
     .pagination > li > a,
     .pagination > li > span {
-        float: right;
         color: black;
         background: #d6d6d6;
         border-radius: 50%;
@@ -320,26 +323,8 @@
         color: black;
     }
     
-    .radio label,
-    .checkbox label {
-        padding-left: 0;
-        padding-right: 20px;
-    }
-    
     hr {
         border-top: 1px solid #b5b5b5;
-    }
-    
-    .radio input[type="radio"],
-    .radio-inline input[type="radio"],
-    .checkbox input[type="checkbox"],
-    .checkbox-inline input[type="checkbox"] {
-        margin-left: 0;
-        margin-right: -20px;
-    }
-    
-    .nav-tabs > li {
-        float: right;
     }
     
     .main-btn {
@@ -386,7 +371,6 @@
         font-size: 10px;
         color: #fff;
         background-color: #1182c3;
-        display: inline-block;
         padding: 3px;
         border-radius: 50%;
         margin-right: 10px;
@@ -569,7 +553,6 @@
     .main-header .actions-list .glyphicon {
         color: #005375;
         font-size: 19px;
-        display: inline-block;
         vertical-align: middle;
         margin: 4px;
     }
@@ -638,7 +621,6 @@
     .list-notifications .glyphicon {
         font-size: 25px;
         color: #fdb813;
-        display: inline-block;
         vertical-align: middle;
         margin: 0 3px;
     }
@@ -748,7 +730,7 @@
     
     .mainnav ul {
         padding: 0;
-        margin-right: 25px;
+        margin-right: 20px;
     }
     
     .mainnav > ul > li {
@@ -885,6 +867,7 @@
         width: 100%;
         margin-top: 10px;
         padding-right: 0;
+        margin-right: 0;
     }
     
     .mainslider .carousel-indicators .active {
@@ -2051,7 +2034,6 @@
     
     .notification-item .pull-right > .glyphicon {
         font-size: 40px;
-        margin-right: 4px;
     }
     
     .notification-item .glyphicon-exclamation-sign {
@@ -2172,7 +2154,6 @@
     
     .product-meta .glyphicon {
         font-size: 18px;
-        display: inline-block;
         margin-left: 15px;
         margin-bottom: 10px;
     }
@@ -2314,6 +2295,12 @@
             background: white;
             border: 1px solid #ddd;
             border-top: 0;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .form-horizontal .control-label {
+            text-align: right;
         }
     }
     /* sm */
