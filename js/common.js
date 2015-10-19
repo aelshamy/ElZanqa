@@ -13,24 +13,26 @@
             })
         });
 
-        //card flip
-        $('.flip-card').on('click', function(e) {
-            e.preventDefault();
-            $('.dimmed').fadeToggle();
-            $(this).parents('.product-card:first').flip(true).css('zIndex', '9999');
-        });
 
-        $('.flip-card-close').on('click', function(e) {
-            e.preventDefault();
-            $('.dimmed').fadeToggle();
-            $(this).parents('.product-card:first').flip(false, function() {
-                $(this).css('zIndex', '');
-            });
-        });
+
+
 
         if (jQuery().flip) {
             $('.product-card').flip({
                 trigger: 'manual'
+            });
+            //card flip
+            $('.flip-card').on('click', function(e) {
+                e.preventDefault();
+                $('.dimmed').fadeToggle();
+                $(this).parents('.product-card:first').flip(true).css('zIndex', '9999');
+            });
+            $('.flip-card-close').on('click', function(e) {
+                e.preventDefault();
+                $('.dimmed').fadeToggle();
+                $(this).parents('.product-card:first').flip(false, function() {
+                    $(this).css('zIndex', '');
+                });
             });
         }
 
