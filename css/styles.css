@@ -66,7 +66,7 @@
     h5,
     .h5 {
         color: #ed1165;
-        font-size: 22px;
+        font-size: 1.375em;
         font-family: "GESSTwoBold-Bold";
     }
     
@@ -395,7 +395,7 @@
     .main-header {
         height: 127px;
         position: relative;
-        z-index: 2000;
+        z-index: 1001;
         font-size: 14px;
         font-family: "GESSTwoLight-Light";
         background: #fff url('../images/headerbg.png') no-repeat bottom center;
@@ -665,7 +665,7 @@
         border-bottom: 1px solid #3a5c6c;
         position: relative;
         top: 0;
-        z-index: 9999;
+        z-index: 1001;
         margin-bottom: 20px;
         -webkit-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
         -moz-transition: top .5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
@@ -998,14 +998,14 @@
     .product-card h6,
     .shop-card h6,
     .caption h6 {
-        font-size: 22px;
+        font-size: 1.375em;
         line-height: 1.3em;
     }
     
     .product-card .price,
     .shop-card .price,
     .caption .price {
-        font-size: 28px;
+        font-size: 1.750em;
         font-family: "GESSTwoBold-Bold";
         color: #ed1165;
         margin-bottom: 10px;
@@ -1025,7 +1025,7 @@
         position: absolute;
         bottom: -55px;
         right: -100px;
-        font-size: 20px;
+        font-size: 1.250em;
     }
     
     .product-card .store-details .title {
@@ -1733,6 +1733,7 @@
     .create-store-btn {
         width: 270px;
         font-size: 18px;
+        max-width: 100%;
     }
     
     .actions .actions-link {
@@ -1859,6 +1860,12 @@
     
     .filter-colors .gray {
         background: #999999;
+    }
+    
+    .filters-wrapper {
+        overflow-y: auto;
+        max-height: 160px;
+        overflow-x: hidden;
     }
     
     .help-tags {
@@ -2159,6 +2166,9 @@
     }
     
     @media (max-width: 767px) {
+        .store-header-bg .media h3 {
+            font-size: 22px;
+        }
         .container-mob {
             max-width: 420px
         }
@@ -2169,7 +2179,7 @@
             width: 152px;
         }
         .mainnav .timeline-nav {
-            font-size: 26px;
+            font-size: 18px;
             color: #fff;
         }
         .mainnav .timeline-nav .sorting {
@@ -2197,6 +2207,14 @@
             bottom: 0;
             right: auto;
             width: auto;
+            margin:10px 0 0 0;
+            padding: 5px 7px;
+        }
+        .product-card .price span, .shop-card .price span, .caption .price span{
+            font-size: 1.4em;
+        }
+        .product-card .back p{
+            font-size: 0.9em;
         }
         .product-card .product-details {
             border: none;
@@ -2268,15 +2286,15 @@
         .badges {
             text-align: center
         }
-        .badges.big .pie-wrapper {
+        .pie-wrapper {
             font-size: 35px;
         }
-        .badges.big .vault {
+        .badges .vault {
             width: 35px;
             height: 35px;
         }
-        .badges.big .vault img,
-        .badges.big .pie-wrapper img {
+        .badges .vault img,
+        .badges .pie-wrapper img {
             max-width: 100%;
         }
         .store-header-links {
@@ -2285,6 +2303,7 @@
         .mobile-filter-buttons button {
             width: 47%;
             margin: 10px 5px;
+            max-width: 45.9%;
         }
         .featured-product img {
             padding-bottom: 0;
@@ -2295,6 +2314,9 @@
             background: white;
             border: 1px solid #ddd;
             border-top: 0;
+        }
+        .pagination > li > a.first-links {
+            padding: 5px 1px;
         }
     }
     
