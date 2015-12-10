@@ -2207,13 +2207,15 @@
             bottom: 0;
             right: auto;
             width: auto;
-            margin:10px 0 0 0;
+            margin: 10px 0 0 0;
             padding: 5px 7px;
         }
-        .product-card .price span, .shop-card .price span, .caption .price span{
+        .product-card .price span,
+        .shop-card .price span,
+        .caption .price span {
             font-size: 1.4em;
         }
-        .product-card .back p{
+        .product-card .back p {
             font-size: 0.9em;
         }
         .product-card .product-details {
@@ -2286,15 +2288,17 @@
         .badges {
             text-align: center
         }
-        .pie-wrapper {
+        .pie-wrapper, .badges.big .pie-wrapper {
             font-size: 35px;
         }
-        .badges .vault {
+        .badges .vault, .badges.big .vault {
             width: 35px;
             height: 35px;
         }
         .badges .vault img,
-        .badges .pie-wrapper img {
+        .badges.big .vault img
+        .badges .pie-wrapper img,
+        .badges.big .pie-wrapper img {
             max-width: 100%;
         }
         .store-header-links {
