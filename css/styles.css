@@ -807,22 +807,23 @@
         margin-bottom: 90px;
     }
     
-    .sidenav li {
+    .sidenav > li {
         border-top: 1px dashed #fdb813;
         position: relative;
     }
     
-    .sidenav li a {
+    .sidenav > li a {
         color: #003348;
         font-size: 16px;
         font-family: "GESSTwoLight-Light";
     }
     
-    .sidenav li + li {
+    .sidenav > li + li {
         margin-top: 0;
     }
     
-    .sidenav li span {
+    .sidenav > li span,
+    .sidenav > li b {
         position: absolute;
         left: 15px;
         top: 17px;
@@ -830,7 +831,7 @@
         color: #002d41;
     }
     
-    .sidenav li:first-child {
+    .sidenav > li:first-child {
         border-top: 0;
     }
     
@@ -2164,8 +2165,93 @@
         margin-left: 15px;
         margin-bottom: 10px;
     }
+    /* off canvas */
     
-    @media (max-width: 767px) {
+    .navbar-toggle {
+        float: right;
+        margin: 0;
+    }
+    
+    .navbar-toggle .icon-bar {
+        background: white;
+    }
+    
+    .navmenu-inverse .user {
+        padding: 20px 15px 0;
+    }
+    
+    .navmenu-inverse .user .list-img + h6.username {
+        color: white;
+        max-width: none;
+    }
+    
+    .navmenu-inverse .divider {
+        border-top: 1px solid #343434;
+        border-bottom: 1px solid #191919;
+    }
+    
+    .navmenu-inverse .list-notifications {
+        float: none;
+        text-align: center;
+    }
+    
+    .navmenu-inverse .list-notifications li {
+        float: none;
+        padding: 0 10px;
+    }
+    
+    .navmenu-inverse .list-notifications .glyphicon {
+        color: #fdb813;
+        font-size: 25px;
+    }
+    
+    .navmenu-inverse .list-notifications .badge {
+        background: #1abfdf;
+        font-family: 'Tahoma Regular';
+        padding: 4px;
+        left: 5px;
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+    .navmenu-inverse .list-notifications .glyphicon.glyphicon-heart {
+        color: #ed1165;
+    }
+    
+    .navmenu-inverse .navmenu-nav>li>a,
+    .navbar-inverse .navbar-offcanvas .navmenu-nav>li>a,
+    .navmenu-inverse {
+        color: #fff;
+    }
+    
+    .navmenu-nav.sidenav {
+        margin-bottom: 0;
+    }
+    
+    .navmenu-inverse .navmenu-nav>.dropdown>a .caret,
+    .navbar-inverse .navbar-offcanvas .navmenu-nav>.dropdown>a .caret {
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+    
+    .navmenu-inverse .main-nav {
+        font-size: 19px;
+        font-family: "GESSTwoBold-Bold";
+    }
+    
+    .navmenu-inverse .navmenu-nav.main-nav>.active>a,
+    .navbar-inverse .navbar-offcanvas .navmenu-nav.main-nav>.active>a,
+    .navmenu-inverse .navmenu-nav.main-nav>.active>a:hover,
+    .navbar-inverse .navbar-offcanvas .navmenu-nav.main-nav>.active>a:hover,
+    .navmenu-inverse .navmenu-nav.main-nav>.active>a:focus,
+    .navbar-inverse .navbar-offcanvas .navmenu-nav.main-nav>.active>a:focus {
+        background:none;
+        color: #ed1165;
+    }
+    
+    @media screen and (max-width: 767px) {
         .store-header-bg .media h3 {
             font-size: 22px;
         }
@@ -2288,16 +2374,17 @@
         .badges {
             text-align: center
         }
-        .pie-wrapper, .badges.big .pie-wrapper {
+        .pie-wrapper,
+        .badges.big .pie-wrapper {
             font-size: 35px;
         }
-        .badges .vault, .badges.big .vault {
+        .badges .vault,
+        .badges.big .vault {
             width: 35px;
             height: 35px;
         }
         .badges .vault img,
-        .badges.big .vault img
-        .badges .pie-wrapper img,
+        .badges.big .vault img .badges .pie-wrapper img,
         .badges.big .pie-wrapper img {
             max-width: 100%;
         }
@@ -2322,6 +2409,9 @@
         .pagination > li > a.first-links {
             padding: 5px 1px;
         }
+        .mainnav ul{
+            margin-right: 0;
+        }
     }
     
     @media (min-width: 768px) {
@@ -2332,6 +2422,9 @@
     /* sm */
     
     @media (min-width: 768px) and (max-width: 983px) {
+        .navbar-toggle{
+            display: block;
+        }
         .store-header-bg .badges {
             margin: 0;
             position: absolute;
@@ -2340,6 +2433,9 @@
         }
         .store-header-links {
             padding-right: 0;
+        }
+        .mainnav ul{
+            margin-right: 0;
         }
         .mainnav .timeline-nav {
             font-size: 26px;
@@ -2423,6 +2519,9 @@
     /* md */
     
     @media (min-width: 984px) and (max-width: 1199px) {
+        .navbar-toggle{
+            display: none;
+        }
         .mainnav ul > li a {
             font-size: 18px;
         }
